@@ -1,15 +1,36 @@
 {
-	"name": "",
-	"type": "module",
-	"version": "0.0.1",
-	"scripts": {
-		"dev": "astro dev",
-		"start": "astro dev",
-		"build": "astro build",
-		"preview": "astro preview",
-		"astro": "astro"
-	},
-	"dependencies": {
-		"astro": "^2.0.16"
-	}
+  "name": "ezequiel-alarcon-portfolio",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "host": "astro dev --host",
+    "start": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro",
+    "lint": "standard --fix ."
+  },
+  "dependencies": {
+    "@astrojs/tailwind": "3.0.1",
+    "astro": "2.0.16",
+    "tailwindcss": "3.2.7"
+  },
+  "devDependencies": {
+    "standard": "17.0.0"
+  },
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "standard": {
+    "ignore": [
+      "**/out/",
+      "/lib/select2/",
+      "/lib/ckeditor/",
+      "tmp.js",
+      "./tsconfig.json",
+      "./tailwind.config.cjs",
+      "./astro.config.mjs"
+    ]
+  }
 }
