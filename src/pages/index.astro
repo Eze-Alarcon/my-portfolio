@@ -1,48 +1,8 @@
 ---
 import Layout from '../layouts/Layout.astro'
+import Header from '../components/Header.astro'
 ---
 
 <Layout title='Porfolio'>
-  <header class='min-w-full h-screen max-h-[720px]'>
-    <section>
-      <article class='min-h-[380px] grid place-content-center'>
-        <div
-          class='h-[380px] w-[175px] flex justify-between bg-gradient-to-t from-darkGray to-black relative pt-5'
-        >
-          <img
-            src='/assets/myself-no-bg.png'
-            alt='Picture of Ezequiel Alarcon.'
-            class='h-[300px] grayscale object-cover self-end'
-          />
-          <div class='w-full flex flex-col items-center gap-5 absolute'>
-            <div class='text-center'>
-              <p class='font-bold text-2xl'>Ezequiel Alarcon</p>
-            </div>
-            <nav class='w-full flex justify-around'>
-              <a href='#'><img src='assets/icon-github.svg' alt='' /></a>
-              <a href='#'
-                ><img src='assets/icon-frontend-mentor.svg' alt='' /></a
-              >
-              <a href='#'><img src='assets/icon-linkedin.svg' alt='' /></a>
-            </nav>
-          </div>
-        </div>
-      </article>
-
-      <!-- <article>
-        <div>
-          <h1>Nice to meet you! I'm Ezequiel Alarcon</h1>
-          <p>
-            Based in the Madrid, I’m a front-end developer passionate about
-            building accessible web apps that users love.
-          </p>
-          <p>Contact me</p>
-        </div>
-      </article> -->
-    </section>
-    <!-- <div></div>  -->
-    <!-- background ring -->
-    <!-- <div></div> -->
-    <!-- background ring 2 -->
-  </header>
+  <Header />
 </Layout>
