@@ -1,7 +1,8 @@
 ---
+import SocialMedia from './socialMedia.astro'
 ---
 
-<header class='min-w-full h-screen max-h-[720px] relative overflow-hidden'>
+<header class='min-w-full relative overflow-hidden'>
   <section class='flex flex-col gap-10'>
     <article class='min-h-[380px] grid place-content-center relative z-30'>
       <div
@@ -17,19 +18,17 @@
             <p class='font-bold text-2xl'>Ezequiel Alarcon</p>
           </div>
           <nav class='w-full flex justify-around'>
-            <a href='#'><img src='assets/icon-github.svg' alt='' /></a>
-            <a href='#'><img src='assets/icon-frontend-mentor.svg' alt='' /></a>
-            <a href='#'><img src='assets/icon-linkedin.svg' alt='' /></a>
+            <SocialMedia />
           </nav>
         </div>
       </div>
     </article>
 
     <article class='w-full flex justify-center'>
-      <div class='max-w-[343px] text-center grid gap-6'>
+      <div class='max-w-[35ch] text-center grid gap-6'>
         <h1 class='font-bold text-3xl'>
           Nice to meet you! <br /> I'm <span
-            class='underline decoration-2 decoration-green underline-offset-4'
+            class='underline decoration-2 decoration-green underline-offset-8'
             >Ezequiel Alarcon</span
           >
         </h1>
@@ -39,19 +38,19 @@
         </p>
         <a
           href='#'
-          class='underline decoration-2 decoration-green underline-offset-8'
+          class='h-10 w-max mx-auto text-xl uppercase tracking-widest font-medium border-green border-b-2'
         >
           Contact me
         </a>
       </div>
     </article>
   </section>
-  <div class='absolute top-1/4 -left-96 z-0'>
-    <img src='/assets/pattern-rings.svg' alt='' />
-  </div>
   <!-- background ring -->
-  <div class='absolute -right-16 top-2/3 z-0'>
-    <img src='/assets/pattern-circle.svg' alt='' />
+  <div class='absolute top-40 -left-96 z-0'>
+    <img src='/assets/pattern-rings.svg' role='presentation' />
   </div>
   <!-- background ring 2 -->
+  <div class='absolute -right-16 top-80 z-0'>
+    <img src='/assets/pattern-circle.svg' role='presentation' />
+  </div>
 </header>

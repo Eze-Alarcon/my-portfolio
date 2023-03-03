@@ -1,21 +1,39 @@
 ---
-export interface Props {
-  title: string
-  body: string
-  href: string
-}
+const { project } = Astro.props
 
-const { href, title, body } = Astro.props
+const baseRoute = '/assets/projects/'
 ---
 
-<li>
-  <a href={href}>
-    <h2>
-      {title}
-      <span>&rarr;</span>
-    </h2>
-    <p>
-      {body}
-    </p>
-  </a>
-</li>
+<article class='w-full'>
+  <div class='grid gap-10'>
+    <img
+      src={baseRoute.concat(project.img)}
+      role='presentation'
+      class='object-cover'
+    />
+  </div>
+  <div class='mt-5'>
+    <p class='text-2xl font-medium'>{project.title}</p>
+    <div class='flex gap-4 mt-2 mb-5'>
+      {
+        project.skills.map((skill) => (
+          <p class='text-gray text-xl tracking-wider'>{skill}</p>
+        ))
+      }
+    </div>
+    <div class='h-10 flex gap-8'>
+      <a
+        href={project.links.project}
+        class='h-full text-xl uppercase tracking-widest font-medium border-green border-b-2'
+      >
+        View project
+      </a>
+      <a
+        href={project.links.repo}
+        class='h-full text-xl uppercase tracking-widest font-medium border-green border-b-2'
+      >
+        view Code
+      </a>
+    </div>
+  </div>
+</article>

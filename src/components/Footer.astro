@@ -1,0 +1,56 @@
+---
+import SocialMedia from './socialMedia.astro'
+---
+
+<section class='relative'>
+  <article class='flex flex-col gap-5 items-center'>
+    <p class='text-4xl font-bold'>Contact</p>
+    <p class='text-center font-medium text-base max-w-[35ch]'>
+      I would love to hear about your project and how I could help. Please fill
+      in the form, and I’ll get back to you as soon as possible.
+    </p>
+  </article>
+  <form action='' class='grid gap-8 mt-12'>
+    <input
+      type='text'
+      name='name'
+      id='name'
+      placeholder='NAME'
+      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-white hover:cursor-pointer'
+    />
+    <input
+      type='email'
+      name='email'
+      id='email'
+      placeholder='EMAIL'
+      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-white hover:cursor-pointer'
+    />
+    <textarea
+      name='message'
+      id=''
+      cols='10'
+      rows='3'
+      placeholder='MESSAGE'
+      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-white hover:cursor-pointer'
+    ></textarea>
+    <button
+      type='submit'
+      class='justify-self-end h-14 text-xl uppercase tracking-widest font-medium border-green border-b-2'
+      >Send Message</button
+    >
+  </form>
+  <article
+    class='w-full flex flex-col items-center gap-5 border-t-2 border-white mt-20 pt-10'
+  >
+    <div class='text-center'>
+      <p class='font-bold text-2xl'>Ezequiel Alarcon</p>
+    </div>
+    <nav class='w-40 flex justify-between'>
+      <SocialMedia />
+    </nav>
+  </article>
+  <!-- background ring -->
+  <div class='absolute bottom-32 -left-96 z-0'>
+    <img src='/assets/pattern-rings.svg' role='presentation' />
+  </div>
+</section>

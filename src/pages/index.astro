@@ -1,8 +1,104 @@
 ---
 import Layout from '../layouts/Layout.astro'
 import Header from '../components/Header.astro'
+import Skills from '../components/Skills.astro'
+import Card from '../components/Card.astro'
+import Footer from '../components/Footer.astro'
+
+const projects = [
+  {
+    img: 'fylo.jpg',
+    title: 'Fylo - Website',
+    skills: ['HTML', 'CSS', 'Tailwind'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'art-gallery.jpg',
+    title: 'Art Gallery - Website',
+    skills: ['HTML', 'CSS', 'Tailwind'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'todo-app.jpg',
+    title: 'Todo App',
+    skills: ['React', 'JavaScript', 'CSS', 'Tailwind'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'tic-tac-toe.jpg',
+    title: 'Tic Tac Toe - Game',
+    skills: ['React', 'JavaScript', 'Tailwind'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'planet-facts.jpg',
+    title: 'Fylo - Website',
+    skills: ['React', 'JavaScript', 'CSS'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'calculator.jpg',
+    title: 'Calculator - Website',
+    skills: ['JavaScript', 'HTML', 'CSS'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+  {
+    img: 'photosnap.jpg',
+    title: 'Photosnap - Website',
+    skills: ['HTML', 'CSS', 'Tailwind'],
+    links: {
+      project: '#',
+      repo: '#',
+    },
+  },
+]
 ---
 
 <Layout title='Porfolio'>
   <Header />
+
+  <main class='py-20 grid gap-20 px-4 overflow-hidden'>
+    <section class='grid gap-10 py-10 border-y relative'>
+      <h2 class='font-bold text-4xl text-center'>My Skills:</h2>
+      <Skills />
+      <div class='absolute -right-96 bottom-0 z-0'>
+        <img src='/assets/pattern-rings.svg' role='none' />
+      </div>
+    </section>
+    <section class='grid gap-10'>
+      <header class='w-full flex justify-between h-10 items-center'>
+        <h2 class='font-bold text-4xl'>Projects</h2>
+        <a
+          href='#'
+          class='h-full text-xl uppercase tracking-widest font-medium border-green border-b-2'
+        >
+          Contact me</a
+        >
+      </header>
+      <div class='grid gap-16'>
+        {projects.map((project) => <Card project={project} />)}
+      </div>
+    </section>
+  </main>
+  <footer class='bg-darkGray px-4 py-14'>
+    <Footer />
+  </footer>
 </Layout>
