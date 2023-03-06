@@ -2,7 +2,7 @@ export const projects = [
   {
     img: 'fylo.jpg',
     title: 'Fylo - Website',
-    skills: ['HTML', 'CSS', 'Tailwind'],
+    skills: ['HTML', 'Tailwind'],
     links: {
       project: 'https://eze-alarcon.github.io/fylo/',
       repo: 'https://github.com/Eze-Alarcon/fylo'
@@ -11,7 +11,7 @@ export const projects = [
   {
     img: 'art-gallery.jpg',
     title: 'Art Gallery - Website',
-    skills: ['HTML', 'CSS', 'Tailwind'],
+    skills: ['Astro', 'Tailwind'],
     links: {
       project: 'https://art-gallery-home.netlify.app',
       repo: 'https://github.com/Eze-Alarcon/art-gallery'
@@ -19,8 +19,8 @@ export const projects = [
   },
   {
     img: 'todo-app.jpg',
-    title: 'Todo App',
-    skills: ['React', 'JavaScript', 'CSS', 'Tailwind'],
+    title: 'TO DO - App',
+    skills: ['React', 'Styled-Components'],
     links: {
       project: 'https://eze-alarcon.github.io/TODO_APP/',
       repo: 'https://github.com/Eze-Alarcon/TODO_APP'
@@ -29,7 +29,7 @@ export const projects = [
   {
     img: 'tic-tac-toe.jpg',
     title: 'Tic Tac Toe - Game',
-    skills: ['React', 'JavaScript', 'Tailwind'],
+    skills: ['React', 'Tailwind', 'Vite'],
     links: {
       project: 'https://tic-tac-toe-home.netlify.app',
       repo: 'https://github.com/Eze-Alarcon/tic-tac-toe'
@@ -37,8 +37,8 @@ export const projects = [
   },
   {
     img: 'planet-facts.jpg',
-    title: 'Fylo - Website',
-    skills: ['React', 'JavaScript', 'CSS'],
+    title: 'Planet Facts - Website',
+    skills: ['React', 'CSS'],
     links: {
       project: 'https://planet-facts-deploy.vercel.app/',
       repo: 'https://github.com/Eze-Alarcon/planet-facts'
@@ -46,8 +46,8 @@ export const projects = [
   },
   {
     img: 'calculator.jpg',
-    title: 'Calculator - Website',
-    skills: ['JavaScript', 'HTML', 'CSS'],
+    title: 'Calculator - App',
+    skills: ['JavaScript', 'CSS'],
     links: {
       project: 'https://eze-alarcon.github.io/Calculator-Frontend_Mentor/',
       repo: 'https://github.com/Eze-Alarcon/Calculator-Frontend_Mentor'
@@ -56,10 +56,21 @@ export const projects = [
   {
     img: 'photosnap.jpg',
     title: 'Photosnap - Website',
-    skills: ['HTML', 'CSS', 'Tailwind'],
+    skills: ['Astro', 'Tailwind'],
     links: {
       project: 'https://photosnap-home.netlify.app',
       repo: 'https://github.com/Eze-Alarcon/photosnap-project'
     }
   }
+]
+
+export const skills = [
+  'HTML',
+  'CSS',
+  'JavaScript',
+  'React',
+  'TypeScript',
+  'Tailwind',
+  'Astro',
+  'Vite'
 ]
