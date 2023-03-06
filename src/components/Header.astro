@@ -9,7 +9,7 @@ import SocialMedia from './socialMedia.astro'
     class='min-h-[380px] grid place-content-center relative z-30 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:justify-end'
   >
     <div
-      class='hidden w-full pt-10 md:flex items-center justify-around gap-5 absolute z-50 md:gap-0'
+      class='hidden w-full pt-10 md:flex justify-around gap-5 absolute z-50 md:gap-0 md:mt-0'
     >
       <div class='w-full'>
         <p class='font-bold text-2xl absolute'>Ezequiel Alarcon</p>
@@ -43,21 +43,21 @@ import SocialMedia from './socialMedia.astro'
     class='w-full flex justify-center md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:pt-20 md:justify-start'
   >
     <div
-      class='w-full max-w-[35ch] md:max-w-[45ch] text-center grid gap-6 md:text-left md:flex md:flex-col md:justify-end z-50'
+      class='w-full max-w-[35ch] md:max-w-none text-center grid gap-6 md:text-left md:flex md:flex-col md:justify-end z-50'
     >
       <h1 class='font-bold text-3xl md:text-5xl overflow-visible'>
         Nice to meet you! <br /> I'm <span
           class='underline decoration-2 decoration-green underline-offset-8'
-          >Ezequiel Alarcon</span
+          >Ezequiel Alarcon.</span
         >
       </h1>
-      <p class='font-medium text-base'>
+      <p class='font-medium text-base md:max-w-[45ch]'>
         Based in Madrid, I’m a front-end developer passionate about building web
         apps that users love.
       </p>
       <a
         href='#'
-        class='h-10 w-max mx-auto text-xl uppercase tracking-widest font-medium border-green border-b-2 md:mx-0'
+        class='h-10 w-max mx-auto text-xl uppercase tracking-widest font-medium border-green border-b-2 md:mx-0 hover:text-green'
       >
         Contact me
       </a>

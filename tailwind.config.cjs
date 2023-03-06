@@ -12,6 +12,10 @@ module.exports = {
       },
       fontFamily: {
         space: 'Space Grotesk, sans-serif'
+      },
+      gridTemplateRows: {
+        // Complex site-specific row configuration
+        footer: 'minmax(0, 1fr) 200px'
       }
     }
   },
