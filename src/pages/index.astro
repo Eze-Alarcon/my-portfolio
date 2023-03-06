@@ -8,13 +8,17 @@ import { projects, skills } from '../scripts/constants'
 ---
 
 <Layout title='Porfolio'>
-  <Header />
+  <header
+    class='min-w-full relative overflow-hidden flex justify-center px-4 md:px-8'
+  >
+    <Header />
+  </header>
 
   <main
-    class='py-20 grid gap-20 px-4 overflow-hidden md:px-8 place-content-center'
+    class='py-20 grid gap-20 px-4 overflow-hidden md:px-8 place-content-center place-items-center'
   >
     <section
-      class='flex flex-col gap-10 py-10 border-y relative text-center md:text-left'
+      class='w-full max-w-[1100px] flex flex-col gap-10 py-10 border-y relative text-center md:text-left'
     >
       <h2 class='font-bold text-4xl'>My Skills:</h2>
       <div class='grid gap-10 md:grid-cols-2'>
@@ -26,7 +30,7 @@ import { projects, skills } from '../scripts/constants'
       </div>
     </section>
 
-    <section class='grid gap-10'>
+    <section class='grid gap-10 w-full max-w-[1100px]'>
       <header class='w-full flex justify-between h-10 items-center'>
         <h2 class='font-bold text-4xl'>Projects</h2>
         <a
@@ -42,7 +46,7 @@ import { projects, skills } from '../scripts/constants'
     </section>
   </main>
 
-  <footer class='bg-darkGray px-4 py-14 md:px-8'>
+  <footer class='bg-darkGray px-4 py-14 md:px-8 flex justify-center'>
     <Footer />
   </footer>
 </Layout>

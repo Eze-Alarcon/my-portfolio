@@ -2,73 +2,73 @@
 import SocialMedia from './socialMedia.astro'
 ---
 
-<header class='min-w-full relative overflow-hidden'>
-  <section class='flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-0'>
-    <article
-      class='min-h-[380px] grid place-content-center relative z-30 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:justify-end'
+<section
+  class='flex flex-col gap-10 md:grid md:grid-cols-2 md:gap-0 w-full max-w-[1100px]'
+>
+  <article
+    class='min-h-[380px] grid place-content-center relative z-30 md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:justify-end'
+  >
+    <div
+      class='hidden w-full pt-10 md:flex items-center justify-around gap-5 absolute z-50 md:gap-0'
     >
-      <div
-        class='hidden w-full px-8 pt-10 md:flex items-center justify-around gap-5 absolute z-50'
-      >
-        <div class='w-full'>
+      <div class='w-full'>
+        <p class='font-bold text-2xl absolute'>Ezequiel Alarcon</p>
+      </div>
+      <nav class='w-[380px] flex justify-around gap-10 pr-8'>
+        <SocialMedia />
+      </nav>
+    </div>
+
+    <div
+      class='min-h-[380px] w-[175px] flex justify-between bg-gradient-to-t from-darkGray to-black relative pt-5 md:min-h-[400px] md:w-[320px]'
+    >
+      <img
+        src='/assets/myself-no-bg.png'
+        alt='Picture of Ezequiel Alarcon.'
+        class='h-[290px] md:h-full grayscale object-cover self-end'
+      />
+
+      <div class='w-full flex flex-col items-center gap-5 absolute md:hidden'>
+        <div class='text-center md:hidden'>
           <p class='font-bold text-2xl'>Ezequiel Alarcon</p>
         </div>
-        <nav class='w-[320px] flex justify-between gap-10'>
+        <nav class='w-full flex justify-around'>
           <SocialMedia />
         </nav>
       </div>
+    </div>
+  </article>
 
-      <div
-        class='min-h-[380px] w-[175px] flex justify-between bg-gradient-to-t from-darkGray to-black relative pt-5 md:min-h-[400px] md:w-[320px]'
-      >
-        <img
-          src='/assets/myself-no-bg.png'
-          alt='Picture of Ezequiel Alarcon.'
-          class='h-[290px] md:h-full grayscale object-cover self-end'
-        />
-
-        <div class='w-full flex flex-col items-center gap-5 absolute md:hidden'>
-          <div class='text-center md:hidden'>
-            <p class='font-bold text-2xl'>Ezequiel Alarcon</p>
-          </div>
-          <nav class='w-full flex justify-around'>
-            <SocialMedia />
-          </nav>
-        </div>
-      </div>
-    </article>
-
-    <article
-      class='w-full flex justify-center md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:pt-20 md:pl-8 md:justify-start'
+  <article
+    class='w-full flex justify-center md:col-start-1 md:col-end-3 md:row-start-1 md:row-end-2 md:pt-20 md:justify-start'
+  >
+    <div
+      class='w-full max-w-[35ch] md:max-w-[45ch] text-center grid gap-6 md:text-left md:flex md:flex-col md:justify-end z-50'
     >
-      <div
-        class='w-full max-w-[35ch] md:max-w-[45ch] text-center grid gap-6 md:text-left md:flex md:flex-col md:justify-end'
-      >
-        <h1 class='font-bold text-3xl md:text-5xl overflow-visible'>
-          Nice to meet you! <br /> I'm <span
-            class='underline decoration-2 decoration-green underline-offset-8'
-            >Ezequiel Alarcon</span
-          >
-        </h1>
-        <p class='font-medium text-base'>
-          Based in Madrid, I’m a front-end developer passionate about building
-          web apps that users love.
-        </p>
-        <a
-          href='#'
-          class='h-10 w-max mx-auto text-xl uppercase tracking-widest font-medium border-green border-b-2 md:mx-0'
+      <h1 class='font-bold text-3xl md:text-5xl overflow-visible'>
+        Nice to meet you! <br /> I'm <span
+          class='underline decoration-2 decoration-green underline-offset-8'
+          >Ezequiel Alarcon</span
         >
-          Contact me
-        </a>
-      </div>
-    </article>
-  </section>
-  <!-- background ring -->
-  <div class='absolute top-40 -left-96 z-0 md:top-10'>
-    <img src='/assets/pattern-rings.svg' role='presentation' />
-  </div>
-  <!-- background ring 2 -->
-  <div class='absolute -right-16 top-80 z-0'>
-    <img src='/assets/pattern-circle.svg' role='presentation' />
-  </div>
-</header>
+      </h1>
+      <p class='font-medium text-base'>
+        Based in Madrid, I’m a front-end developer passionate about building web
+        apps that users love.
+      </p>
+      <a
+        href='#'
+        class='h-10 w-max mx-auto text-xl uppercase tracking-widest font-medium border-green border-b-2 md:mx-0'
+      >
+        Contact me
+      </a>
+    </div>
+  </article>
+</section>
+<!-- background ring -->
+<div class='absolute top-40 -left-96 z-0 md:top-14 lg:-left-60'>
+  <img src='/assets/pattern-rings.svg' role='presentation' />
+</div>
+<!-- background ring 2 -->
+<div class='absolute -right-16 top-80 z-0 md:top-60 md:z-50'>
+  <img src='/assets/pattern-circle.svg' role='presentation' />
+</div>
