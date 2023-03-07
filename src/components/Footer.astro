@@ -16,6 +16,7 @@ import SocialMedia from './socialMedia.astro'
   </article>
   <form
     action=''
+    id='form'
     class='h-full w-full grid gap-8 mt-12 max-w-[350px] md:max-w-[450px] lg:col-start-2 lg:col-end-3 lg:row-start-1 lg:row-end-2 items-start lg:mt-0 lg:place-self-end'
   >
     <input
@@ -23,25 +24,29 @@ import SocialMedia from './socialMedia.astro'
       name='name'
       id='name'
       placeholder='NAME'
-      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
+      required
+      class='form-input caret-green pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
     />
     <input
       type='email'
       name='email'
       id='email'
       placeholder='EMAIL'
-      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
+      autocomplete='email'
+      required
+      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 caret-green border-white default:border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
     />
     <textarea
       name='message'
-      id=''
+      id='message'
       cols='10'
       rows='3'
       placeholder='MESSAGE'
-      class='form-input pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
+      required
+      class='form-input caret-green pl-6 pb-4 bg-inherit border-0 border-b-2 border-white outline-none focus:ring-0 focus:border-green hover:cursor-pointer'
     ></textarea>
     <button
-      type='submit'
+      id='form-button'
       class='justify-self-end h-14 text-xl uppercase tracking-widest font-medium border-green border-b-2 hover:text-green'
       >Send Message</button
     >
