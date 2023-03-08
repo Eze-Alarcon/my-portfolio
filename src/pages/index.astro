@@ -20,8 +20,16 @@ import { projects, skills } from '../scripts/constants'
     <section
       class='w-full max-w-[1100px] flex flex-col gap-10 py-10 border-y relative text-center md:text-left'
     >
-      <h2 class='font-bold text-4xl'>My Skills:</h2>
-      <div class='grid gap-10 md:grid-cols-2'>
+      <div class='w-full flex justify-between items-end'>
+        <h2 class='font-bold text-3xl md:text-4xl'>My Skills:</h2>
+        <a
+          href='/certificates'
+          class='h-full text-xl uppercase tracking-widest font-bold border-green border-b-2 hover:text-green'
+        >
+          My certificates
+        </a>
+      </div>
+      <div class='grid gap-5 md:grid-cols-2'>
         {skills.map((skill) => <p class='font-bold text-3xl'>{skill}</p>)}
       </div>
       <!-- Background ring -->

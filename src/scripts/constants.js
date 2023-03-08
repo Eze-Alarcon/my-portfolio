@@ -72,5 +72,70 @@ export const skills = [
   'TypeScript',
   'Tailwind',
   'Astro',
-  'Vite'
+  'Vite',
+  'Node js'
+]
+
+export const AllCertificates = [
+  {
+    title: 'Coderhouse',
+    images: ['coderhouse_js.png', 'coderhouse_react.png']
+  },
+  {
+    title: 'JavaScript',
+    images: [
+      'diploma-asincronismo-js-2019.png',
+      'diploma-dom.png',
+      'diploma-ecmascript-6.png',
+      'diploma-funcional-js.png',
+      'diploma-javascript-navegador.png',
+      'diploma-javascript-poo-intermedio.png',
+      'diploma-javascript-poo.png'
+    ]
+  },
+  {
+    title: 'API with JavaScript',
+    images: [
+      'diploma-api.png',
+      'diploma-api-profesional.png',
+      'diploma-apiRest-js.png'
+    ]
+  },
+  {
+    title: 'React',
+    images: [
+      'diploma-react.png',
+      'diploma-react-practico.png',
+      'diploma-react-patrones-render.png',
+      'diploma-react-estado.png'
+    ]
+  },
+  {
+    title: 'TypeScript',
+    images: [
+      'diploma-typescript.png',
+      'diploma-typescript-tipos-avanzados.png',
+      'diploma-typescript-poo.png'
+    ]
+  },
+  {
+    title: 'Node.js',
+    images: [
+      'diploma-fundamentos-node.png',
+      'diploma-backend-nodejs.png',
+      'diploma-nodejs-mongo-websockets.png'
+    ]
+  },
+  {
+    title: 'Styles',
+    images: [
+      'diploma-mobile-first.png',
+      'diploma-flexbox-css-grid.png',
+      'diploma-tailwind.png'
+    ]
+  },
+  {
+    title: 'Others',
+    images: ['diploma-git-github.png']
+  }
 ]

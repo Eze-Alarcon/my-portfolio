@@ -1,0 +1,20 @@
+---
+const { title, images } = Astro.props
+
+const baseRoute = '/assets/certificates/'
+---
+
+<h3 class='font-bold text-2xl'>{title} certificates:</h3>
+<div class='w-full grid gap-8 md:grid-cols-2 md:place-content-between'>
+  {
+    images.map((image: string) => (
+      <div class='w-full'>
+        <img
+          src={`${baseRoute}${image}`}
+          role='presentation'
+          class='aspect-auto'
+        />
+      </div>
+    ))
+  }
+</div>
