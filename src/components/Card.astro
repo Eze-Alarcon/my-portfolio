@@ -11,7 +11,7 @@ const baseRoute = '/assets/projects/'
         src={baseRoute.concat(project.img)}
         role='presentation'
         loading='lazy'
-        class='object-cover min-w-full aspect-video group-hover:lg:opacity-30'
+        class={`${project.title === 'Vilca & Maya - Website' ? 'object-contain bg-[#000]' : 'object-cover'} min-w-full aspect-video group-hover:lg:opacity-30`}
       />
     </a>
     <div

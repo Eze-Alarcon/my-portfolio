@@ -8,6 +8,7 @@ import { projects, skills } from '../scripts/constants'
 ---
 
 <Layout title='Porfolio'>
+  </style>
   <header
     class='min-w-full relative overflow-hidden flex justify-center px-4 md:px-8'
   >
@@ -30,7 +31,7 @@ import { projects, skills } from '../scripts/constants'
         </a>
       </div>
       <div class='grid gap-5 md:grid-cols-2'>
-        {skills.map((skill) => <p class='font-bold text-3xl'>{skill}</p>)}
+        {skills.map((skill) => <p class='font-bold text-3xl uppercase' data-value={skill} data-type='skill'>{skill}</p>)}
       </div>
       <!-- Background ring -->
       <div class='absolute -right-96 bottom-0 z-0'>

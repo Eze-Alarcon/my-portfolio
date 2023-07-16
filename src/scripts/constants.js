@@ -1,20 +1,20 @@
 export const projects = [
   {
-    img: 'fylo.jpg',
-    title: 'Fylo - Website',
-    skills: ['HTML', 'Tailwind'],
+    img: 'kanban.jpg',
+    title: 'Kanban - App',
+    skills: ['React', 'Tailwind', 'Node'],
     links: {
-      project: 'https://eze-alarcon.github.io/fylo/',
-      repo: 'https://github.com/Eze-Alarcon/fylo'
+      project: 'https://kanban-vite.vercel.app/',
+      repo: 'https://github.com/G3rars/Kanban-Vite'
     }
   },
   {
-    img: 'art-gallery.jpg',
-    title: 'Art Gallery - Website',
-    skills: ['Astro', 'Tailwind'],
+    img: 'entertainment-web-app.jpg',
+    title: 'Movie app - Website',
+    skills: ['React', 'Tailwind', 'Vite'],
     links: {
-      project: 'https://art-gallery-home.netlify.app',
-      repo: 'https://github.com/Eze-Alarcon/art-gallery'
+      project: 'https://my-entertainment-web-app.netlify.app/',
+      repo: 'https://github.com/Eze-Alarcon/react-movie-app'
     }
   },
   {
@@ -54,12 +54,30 @@ export const projects = [
     }
   },
   {
+    img: 'vilca-maya.jpg',
+    title: 'Vilca & Maya - Website',
+    skills: ['HTML', 'CSS'],
+    links: {
+      project: 'https://estudiocontablevym.com.ar/index.html',
+      repo: 'https://github.com/Eze-Alarcon/vilca-maya'
+    }
+  },
+  {
     img: 'photosnap.jpg',
     title: 'Photosnap - Website',
     skills: ['Astro', 'Tailwind'],
     links: {
       project: 'https://photosnap-home.netlify.app',
       repo: 'https://github.com/Eze-Alarcon/photosnap-project'
+    }
+  },
+  {
+    img: 'art-gallery.jpg',
+    title: 'Art Gallery - Website',
+    skills: ['Astro', 'Tailwind'],
+    links: {
+      project: 'https://art-gallery-home.netlify.app',
+      repo: 'https://github.com/Eze-Alarcon/art-gallery'
     }
   }
 ]
@@ -73,7 +91,8 @@ export const skills = [
   'Tailwind',
   'Astro',
   'Vite',
-  'Node js'
+  'Node js',
+  'API REST'
 ]
 
 export const AllCertificates = [

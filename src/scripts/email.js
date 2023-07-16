@@ -9,7 +9,7 @@ let btnFlag = false
 form.addEventListener('submit', (e) => handleSubmit(e))
 formEmail.addEventListener('change', handleChange)
 
-function handleChange() {
+function handleChange () {
   if (formEmail.value === '') {
     formEmail.classList.remove('invalid:border-red-600', 'focus:invalid:border-red-600')
   } else {
@@ -20,14 +20,14 @@ function handleChange() {
 const serviceID = 'service_9apqtit'
 const templateID = 'template_xvd110j'
 
-function changeBtn() {
+function changeBtn () {
   if (!btnFlag) {
     btnFlag = true
     formBtn.innerText = 'Messsage Sent'
   }
 }
 
-export function handleSubmit(e) {
+export function handleSubmit (e) {
   e.preventDefault()
 
   if (btnFlag) return
@@ -40,6 +40,7 @@ export function handleSubmit(e) {
     message: formData.get('message')
   }
 
+  // eslint-disable-next-line no-undef
   emailjs.send(serviceID, templateID, data)
     .then(
       res => {
